@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 20px;
+    Margin: 10px;
+    margin-top: -100px;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+h1 {
+    font-size: 30px;
+    font-family: Verdana;
+    color: #762DDD;
+    text-align: center;
+}
+
+img {
+    width: 350px;
+}
+
+
+#artists{
+    justify-content: space-between;
+    font-family: sans-serif;
+    color: black;
+    width: 40%;
+    padding: 40px;
+    margin-left: 30px;
+    
+}
+
+.profile{
+    width: 16%;
+    padding: 10px;
+    font-size: 1.5vw;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+
+/* CSS for mobil versjonen */
+
+@media all and (max-width: 550px) {
+
+
+
+
+
+
+
+
+
+}
