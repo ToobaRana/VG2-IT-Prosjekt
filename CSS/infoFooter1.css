@@ -1,0 +1,56 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+
+
+#contactInfo {
+    display: flex;
+    flex: wrap;
+    justify-content: space-around;
+    width: 100%; 
+    padding: 15px;
+    background-color: #595A5A;
+    opacity: 1;
+    color: white;
+}
+
+#contactInfo a {
+    color: lightseagreen;
+}
+
+
+
+
+.Address h1 {
+    font-size: 3vw;
+    color: white;
+    margin-bottom: 20px;
+    margin-left: -10px;
+
+}
+
+.Address p {
+    font-size: 15px;
+}
+
+img[alt*="facebook"] { 
+    width: 40px;
+    margin-top: 15px;
+}
+
+img[alt*="instagram"] {
+    width: 55px;
+}
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    color: lightgray;
+    height: 50px;
+    background-color: #28747E;
+    padding-top: 10px;
+}

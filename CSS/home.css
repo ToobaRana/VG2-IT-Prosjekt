@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-bar {
+    width: 100%;
+}
+
+.header {
+    height: 100vh;
+}
+
+.video-background {
+    right: 0;
+    top: 0;
+    position: absolute;
+    min-width: 100%;
+    min-height:100% ;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+/*
+
+@media screen and (max-width: 500px) {
+
+.video-background {
+    width: 100%;
+    height: auto;
+}
+
+}
+*/

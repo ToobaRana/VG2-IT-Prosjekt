@@ -1,14 +1,16 @@
 body {
     font-size: 20px;
     Margin: 10px;
-    margin-top: -100px;
-    color: pink;
+}
+
+header {
+    width: 100%;
 }
 
 h1 {
     font-size: 30px;
     font-family: Verdana;
-    color: #762DDD;
+    color: #28747E;
 }
 
 p{
@@ -17,7 +19,7 @@ p{
 }
 
 strong {
-    color: #762DDD;
+    color: #333333;
 
 }
 
@@ -25,21 +27,23 @@ img {
     width: 350px;
 }
 
+#album {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
 
 
 #albumInfo{
-    justify-content: space-between;
     color: black;
-    font-size: 30px;
-    width: 40%;
-    padding: 40px;
-    margin-left: 30px;
-    margin-top: 200px;
+    font-size: 20px;
+    width: 30%;
+    margin-left: 50px;
+    margin-top: 90px;
+    line-height: 40px;
     
-}
-
-#album {
-    display: flex;
 }
 
 

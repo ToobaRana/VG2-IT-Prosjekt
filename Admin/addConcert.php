@@ -35,7 +35,7 @@ $sql= sprintf("INSERT INTO Concert(ConcertName,Venue, ConcertDate, VenuePic)
             }
 
             header {
-                margin-top: 110px;
+                margin-top: 1000px;
             }
 
             h1 {

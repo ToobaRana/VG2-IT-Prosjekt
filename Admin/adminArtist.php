@@ -52,7 +52,7 @@ if (isset($_GET["deleteID"]))
             }
 
             header {
-                margin-top: 55px;
+                margin-top: 100px;
             }
 
             form {

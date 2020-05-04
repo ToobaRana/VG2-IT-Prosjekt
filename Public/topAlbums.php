@@ -48,17 +48,20 @@ $datasett = $tilkobling->query($sql);
         <h1>Top 10 Albums</h1>
     </section>
 
+    <div id="albumSection">
+        <?php  while ($rad =mysqli_fetch_array($datasett)) { 
+            $id = $rad["albumID"] ?>
 
-    <?php  while ($rad =mysqli_fetch_array($datasett)) { 
-        $id = $rad["albumID"] ?>
-
-<!-- Her referer jeg til php siden som kommer til å føre meg direkte til akkurat det albummet som trykkes på -->
-        <a href="singleAlbum.php?id=<?php echo $id?>">
-                        <img src="<?php echo $rad["AlbumCover"]; ?>" 
-                        alt="<?php echo $rad["AlbumName"] ?> " />
-        </a>
-
-    <?php }?>
+        <!-- Her referer jeg til php siden som kommer til å føre meg direkte til akkurat det albummet som trykkes på -->
+            <div id="albumPhoto">
+                    <a href="singleAlbum.php?id=<?php echo $id?>">
+                                    <img src="<?php echo $rad["AlbumCover"]; ?>" 
+                                    alt="<?php echo $rad["AlbumName"] ?> " />
+                    </a>
+            </div>
+        <?php }?>
+    </div>        
+    <?php include ("infoFooter.php") ?>
 
 
 

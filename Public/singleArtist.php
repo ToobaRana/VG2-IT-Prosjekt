@@ -37,9 +37,7 @@
 <body>
 
     <header>
-        <nav>
-            <?php include ("nav.php") ?>
-        </nav>
+            <?php include ("../Public/nav.php") ?>
     </header>
 
 
@@ -47,27 +45,31 @@
         <br><br> <!-- satte inn br-taggen for at dropdownmenyen til album ikke skulle dekke overskriften -->
     </section>
 
-   
-    <?php if ($rad =mysqli_fetch_array($datasett)) { ?>
-        <h1><?php echo $rad["FirstName"]; ?> <?php echo $rad["LastName"]; ?> </h1> 
-        
-       
-            <img src="<?php echo $rad["Picture"]; ?>" width = "400" 
-                alt = "<?php echo $rad["FirstName"]; ?>" />
-        
-        <p><strong> Birthdate:</strong> <?php echo $rad["Birthdate"]; ?></p>
+   <div id="artistSection">
+        <?php if ($rad =mysqli_fetch_array($datasett)) { ?>
+            
+            <div id="artistPhoto">
+                <img src="<?php echo $rad["Picture"]; ?>" width = "400" 
+                    alt = "<?php echo $rad["FirstName"]; ?>" />
+            </div>
 
-        <p><strong> Concert:</strong> <?php echo $rad["ConcertName"]; ?></p>
-        <p><strong> Venue:</strong> <?php echo $rad["Venue"]; ?></p>
-       <p><strong> Date:</strong> <?php echo $rad["ConcertDate"]; ?></p> 
-      
+            <div id="artistInfo">
+                <h1><?php echo $rad["FirstName"]; ?> <?php echo $rad["LastName"]; ?> </h1> <br>
+                <p><strong> Birthdate:</strong> <?php echo $rad["Birthdate"]; ?></p>
+                <p><strong> Concert:</strong> <?php echo $rad["ConcertName"]; ?></p>
+                <p><strong> Venue:</strong> <?php echo $rad["Venue"]; ?></p>
+                <p><strong> Date:</strong> <?php echo $rad["ConcertDate"]; ?></p> 
+            </div>
+            
+            <!-- Hvis dette ikke skjer -->   
+            <?php } else { ?>
+                <p>Not found</p>
+        <?php } ?>
+    </div>
+
     
-       
-    <!-- Hvis dette ikke skjer -->   
-    <?php } else { ?>
-        <p>Not found</p>
-    <?php } ?>
-    
+    <?php include ("infoFooter.php") ?>
+
     
    
 

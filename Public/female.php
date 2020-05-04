@@ -33,39 +33,38 @@ $datasett = $tilkobling->query($sql);
 
 
 
+
 <body>
 
     <header>
-        <nav>
             <?php include ("nav.php") ?>
-        </nav>
-
     </header>
-    
-
-    
 
     <section>
         <br><br> <!-- satte inn br-taggen for at dropdownmenyen til album ikke skulle dekke overskriften -->
-        <h1>Female artists</h1>
+        <h1>Female Artists</h1>
     </section>
+    
 
+    <div id="artistSection">
+        <?php  while ($rad =mysqli_fetch_array($datasett)) { 
+            $id = $rad["artistID"] ?>
 
-    <?php  while ($rad =mysqli_fetch_array($datasett)) { 
-        $id = $rad["artistID"] ?>
+            <div id="artistPhoto">
 
-<!-- Her referer jeg til php siden som kommer til å føre meg direkte til akkurat den artisten som trykkes på -->
-        <a href="singleArtist.php?id=<?php echo $id?>">
+                <!-- Her referer jeg til php siden som kommer til å føre meg direkte til akkurat den artisten som trykkes på -->        
+                    <a href="singleArtist.php?id=<?php echo $id?>">
                         <img src="<?php echo $rad["Picture"]; ?>" 
                         alt="<?php echo $rad["FirstName"] ?><?php echo $rad["LastName"] ?> " />
-        </a>
+                    </a>
+            </div>        
 
-    <?php }?>
+        <?php }?>
+    </div>
 
+    <?php include ("infoFooter.php") ?>
 
 
 </body>
 
 </html>
-
-

@@ -34,41 +34,40 @@ $datasett = $tilkobling->query($sql);
         
 
         <header>
-            <nav>
-                <?php include ("nav.php") ?>
-            </nav>
+                <?php include ("../Public/nav.php") ?>
         </header>
 
 
         <section>
-            <br><br>
-        <h1>Concerts</h1>
+            <br><br> <!-- satte inn br-taggen for at dropdownmenyen til album ikke skulle dekke overskriften -->
         </section>
+    
+        <div id="concertArtist">
 
-        <?php while ($rad =mysqli_fetch_array($datasett)) { ?>
+            <?php while ($rad =mysqli_fetch_array($datasett)) { ?>
 
-            <div id="concertArtist">
-
-                <div id="picVenue">
-                            <img src="<?php echo $rad["VenuePic"]; ?>" 
-                            alt = "<?php echo $rad["Venue"]; ?>" />
-                </div>
-            
-
-                <div id="concertInfo">
-                    <h2><?php echo  $rad["ConcertName"]; ?></h2> 
-                    <strong>Artist: </strong><?php echo $rad["FirstName"]; ?> <?php echo $rad["LastName"]; ?> <br> <br>
-                    <strong>Venue: </strong><?php echo  $rad["Venue"]; ?> <br> <br>
-                    <Strong>Concert Date: </Strong>
-                    <?php echo  $rad["ConcertDate"]; ?> <br> <br>
-                </div>
                 
-            </div> 
 
-                <hr>
+                    <div id="picVenue">
+                                <img src="<?php echo $rad["VenuePic"]; ?>" 
+                                alt = "<?php echo $rad["Venue"]; ?>" />
+                    </div>
+                
 
-        <?php } ?>
+                    <div id="concertInfo">
+                        <h2><?php echo  $rad["ConcertName"]; ?></h2> 
+                        <strong>Artist: </strong><?php echo $rad["FirstName"]; ?> <?php echo $rad["LastName"]; ?> <br> <br>
+                        <strong>Venue: </strong><?php echo  $rad["Venue"]; ?> <br> <br>
+                        <Strong>Concert Date: </Strong>
+                        <?php echo  $rad["ConcertDate"]; ?> <br> <br>
+                    </div>
 
+            <?php } ?>
+             
+        </div>   
+
+
+        <?php include ("infoFooter.php") ?>
 
 
     </body>

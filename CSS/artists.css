@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -5,51 +6,61 @@
 
 body {
     font-size: 20px;
-    Margin: 10px;
-    margin-top: -100px;
+    Margin: 0px;
+    padding: 0px;
     display: flex;
     flex-wrap: wrap;
+    background-color: #F2F4F6;
 
 
 }
 
+header {
+    width: 100%;
+}
+
 h1 {
-    font-size: 30px;
-    font-family: Verdana;
-    color: #762DDD;
-    text-align: center;
+    font-size: 50px;
+    margin-left: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    color: black;
 }
 
 img {
     width: 350px;
 }
 
+#artistSection img {
 
-#artists{
-    justify-content: space-between;
-    font-family: sans-serif;
-    color: black;
-    width: 40%;
-    padding: 40px;
-    margin-left: 30px;
-    
+    box-shadow: 5px 8px black ;
 }
 
-.profile{
-    width: 16%;
+
+#artistPhoto{
+    width: 30%;
     padding: 10px;
-    font-size: 1.5vw;
+    justify-content: space-between;
+    margin: 10px;
 }
 
 section {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 85px;
+}
+
+#artistSection {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    margin-left: 90px;
 }
 
 
 /* CSS for mobil versjonen */
 
 @media all and (max-width: 550px) {
+
+
 
 
 

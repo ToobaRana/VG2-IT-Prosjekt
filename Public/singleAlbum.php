@@ -36,9 +36,7 @@
 <body>
 
     <header>
-        <nav>
-            <?php include ("nav.php") ?>
-        </nav>
+            <?php include ("../Public/nav.php") ?>
     </header>
 
 
@@ -46,29 +44,34 @@
         <br><br> <!-- satte inn br-taggen for at dropdownmenyen til album ikke skulle dekke overskriften -->
     </section>
 
-   
-    <?php if ($rad =mysqli_fetch_array($datasett)) { ?>
 
-        <div id="album">
-                <div>
-                    <h1><?php echo $rad["AlbumName"]; ?></h1>
-                    <img src="<?php echo $rad["AlbumCover"]; ?>" width = "400" 
-                        alt = "<?php echo $rad["AlbumName"]; ?>" />
-                </div>
+    <div id="album">
+            <?php if ($rad =mysqli_fetch_array($datasett)) { ?>
+                    <div id="albumPhoto">
+                        <img src="<?php echo $rad["AlbumCover"]; ?>" width = "400" 
+                            alt = "<?php echo $rad["AlbumName"]; ?>" />
+                    </div>
 
-            <div id="albumInfo">
-                    <strong>Artist:  </strong><?php echo $rad["FirstName"]; ?> <?php echo $rad["LastName"]; ?> <br>
-                    <strong>Release Date:  </strong><?php echo $rad["ReleaseDate"]; ?> <br>
-                    <strong>Studio Album :  </strong><?php echo  $rad["StudioAlbum"]; ?> <br>
-                    <strong>Price:  </strong><?php echo  $rad["Price"]; ?> kr <br> <br>
-            </div>
+                    <div id="albumInfo">
+                            <h1><?php echo $rad["AlbumName"]; ?></h1> <br>
+                            <strong>Artist:  </strong><?php echo $rad["FirstName"]; ?> <?php echo $rad["LastName"]; ?> <br>
+                            <strong>Release Date:  </strong><?php echo $rad["ReleaseDate"]; ?> <br>
+                            <strong>Studio Album :  </strong><?php echo  $rad["StudioAlbum"]; ?> <br>
+                            <strong>Price:  </strong><?php echo  $rad["Price"]; ?> kr <br> <br>
+                
 
-            <!-- Hvis dette ikke skjer -->               
+                            <!-- Hvis dette ikke skjer -->               
 
-            <?php } else { ?>
-                <p>Not found</p>
-            <?php } ?>
-        </div>   
+                            <?php } else { ?>
+                                <p>Not found</p>
+                            <?php } ?>
+                    </div>
+    </div>   
+
+
+    
+    <?php include ("infoFooter.php") ?>
+
             
    
 

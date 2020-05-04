@@ -1,50 +1,39 @@
 body {
     font-size: 20px;
     Margin: 10px;
-    margin-top: -100px;
-    color: pink;
-
-
-
+}
+header {
+    width: 100%;
 }
 
 h1 {
     font-size: 30px;
     font-family: Verdana;
-    color: #762DDD;
-}
-
-p {
-    color: black;
-    
+    color: #28747E;
 }
 
 strong {
-    color: #762DDD;
-
+    color: #333333;
 }
 
-img {
+#artistSection {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    margin-left: 100px;
+}
+
+#artistInfo {
+    margin-left: 50px;
+    margin-top: 90px;
+    line-height: 40px;
+}
+
+#artistPhoto img  {
     width: 350px;
 }
 
 
-
-#artists{
-    justify-content: space-between;
-    font-family: sans-serif;
-    color: black;
-    width: 40%;
-    padding: 40px;
-    margin-left: 30px;
-    
-}
-
-.profile{
-    width: 16%;
-    padding: 10px;
-    font-size: 1.5vw;
-}
 
 section {
     width: 100%;

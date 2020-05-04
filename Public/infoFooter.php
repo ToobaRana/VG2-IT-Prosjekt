@@ -2,19 +2,19 @@
 <html>
      <head>
          <meta charset="utf-8" />
-         <link rel="stylesheet" type="text/css" href="../CSS/infoFooter.css" />       
+         <link rel="stylesheet" type="text/css" href="../CSS/infoFooter1.css" />       
     </head>         
     
     <body>
         <div id="contactInfo">
             <div class="Address">
                 <h1>Contact us</h1>
-                <p>Music House<br>
-                        Blakstadmarka 31 <br>
+                <p>Music Hub<br>
+                        Asker Videregående Skole<br>
                         1386 Asker <br>
                         <br><br>
-                        Tlf: 400 99 785 <br>
-                        E-post: <a href="" target="_blank">tooba.iar@gmail.com</a> 
+                        Tlf: 66 90 72 40 <br>
+                        E-post: <a href="" target="_blank">askervgs@viken.no</a> 
                 </p>
                 <img src="../Images/facebook.svg" alt="facebook">
                 <img src="../Images/insta.png" alt="instagram">
@@ -31,7 +31,7 @@
         </div>
         
         <footer>
-            <p>&COPY;2020 MusicHouse » |   Design & Development: Tooba Rana | </p>
+            <p>&COPY;2020 MusicHub » |   Design & Development: Tooba Rana | </p>
         </footer>
         
     </body>
