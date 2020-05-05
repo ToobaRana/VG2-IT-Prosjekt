@@ -6,16 +6,18 @@
     </head>         
     
     <body>
-        <header>
+        
             <?php include ("../Public/nav.php") ?>
-        </header>
-
 
 
         <section class="header">
             <video autoplay loop class="video-background" muted plays-inline>
                 <source src="../Images/background.mp4" type="video/mp4">
             </video>
+
+        <div id="banner">
+            WELCOME TO THE MUSIC HUB
+        </div>
 
         </section>
 

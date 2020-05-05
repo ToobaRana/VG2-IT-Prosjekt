@@ -21,12 +21,12 @@ $sql=sprintf("UPDATE Album
               
             $tilkobling->real_escape_string($_POST["txtAlbumName"]),
             $tilkobling->real_escape_string($_POST["txtReleaseDate"]),
-             $tilkobling->real_escape_string($_POST["txtStudioAlbum"]),
-             $tilkobling->real_escape_string($_POST["txtPrice"]),
-             $tilkobling->real_escape_string($_POST["txtAlbumCover"]),
-             $tilkobling->real_escape_string($_POST["txtIsTop"]),
-             $tilkobling->real_escape_string($_POST["1startistID"]),
-              $tilkobling->real_escape_string($_GET["updateID"])
+            $tilkobling->real_escape_string($_POST["txtStudioAlbum"]),
+            $tilkobling->real_escape_string($_POST["txtPrice"]),
+            $tilkobling->real_escape_string($_POST["txtAlbumCover"]),
+            $tilkobling->real_escape_string($_POST["txtIsTop"]),
+            $tilkobling->real_escape_string($_POST["1startistID"]),
+            $tilkobling->real_escape_string($_GET["updateID"])
             );
     $tilkobling->query($sql);
 header("Location:AdminAlbum.php");
@@ -35,68 +35,14 @@ header("Location:AdminAlbum.php");
 ?>
     <!DOCTYPE html>
     <html>
-    <!-- seksjon for metainfo -->
-
     <head>
         <title> Update</title>
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" media="screen" "stilarkfil.css" />
-        <link rel="stylesheet" type="text/css" media="print" href="utskrift.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <style>
-            body {
-            font-size: 20px;
-            }
-
-            header {
-                margin-top: 55px;
-            }
-
-
-            form {
-                margin: 40px; 
-                color: black;   
-            }
-
-            input {
-                background-color:#d9c7f2;
-                height: 25px;
-            }
-
-            button {
-                color: black;
-                background-color:#d9c7f2;
-            }
-
-            /* stylingen under er gjort for å få input boksene til å komme rett under hverandre */
-
-
-            #txtReleaseDate {
-                margin-left: 5px;
-            }
-
-            #txtPrice {
-                margin-left: 70px;
-            }
-
-            #txtPicture {
-                margin-left: 22px;
-
-            }
-
-            #txtIsTop{
-                margin-left: 80px;
-
-            }
-
-
-        </style>
+        <link rel="stylesheet" type="text/css" href="../CSS/updateAlbum.css" />
 
 
     
     </head>
-    <!-- seksjon for hovedinnhold -->
 
 
     <body>
@@ -109,6 +55,7 @@ header("Location:AdminAlbum.php");
             <?php include ("adminMenu.php") ?> 
         </section>
           
+        <h1>Update Album</h1>
 
         <form method="post">
             <?php if($rad=mysqli_fetch_array($datasett)) { ?>
@@ -149,6 +96,9 @@ header("Location:AdminAlbum.php");
             <button type="submit" name="submit"> Update album</button>
             <?php } ?>
         </form>
+
+
+        <?php include ("../Public/infoFooter.php") ?>
 
 
     </body>

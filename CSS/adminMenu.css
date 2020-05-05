@@ -1,23 +1,35 @@
 * {
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
 }
 
-
 body {
-    font-size: 20px;
-    Margin: 10px;
-    margin-top: -100px;
-
+    font-family: sans-serif;
 }
 
-section {
-    width: 100%;
-    margin-bottom: 40px;
+.adminMenu-bar {
+    opacity: 0.8;
+    text-align: center;
+    z-index: 2;
+    background-color: #28747E;
 }
 
-#adminMenu { 
-    padding: 10px;
-    margin-left: 300px;
-    margin-bottom: 100px;
-
+.adminMenu-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    list-style: none;
+    display: inline-flex;
 }
+
+.adminMenu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.active, .adminMenu-bar ul li:hover {
+    background-color: #333333;
+    border-radius: 3px;
+}
+

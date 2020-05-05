@@ -1,0 +1,63 @@
+
+body {
+    font-size: 20px;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+
+table th {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding: 15px;
+    color: black;
+}
+
+table {
+    width: 100%;
+}
+
+.menu-bar {
+    width: 200%;
+}
+
+td {
+    border-bottom: black dotted 1px;
+    padding: 15px;
+}
+
+#singleBorder {
+    border: solid 1px black;
+}
+
+tr {
+    border-bottom: 1px solid black;
+}
+
+
+header {
+    margin-bottom: 200px;
+}
+
+section {
+    width: 500px;
+    margin-left: 470px;
+}
+
+form {
+    color: black;
+}
+
+h1 {
+    color: #333333;
+    margin: 10px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+td a {
+    color: #28747E;
+    text-decoration: none;
+}

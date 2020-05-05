@@ -25,60 +25,20 @@ $sql= sprintf("INSERT INTO Concert(ConcertName,Venue, ConcertDate, VenuePic)
     <head>
         <title> Add Concert</title>
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" media="screen" "stilarkfil.css" />
-        <link rel="stylesheet" type="text/css" media="print" href="utskrift.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <style>  
-           body {
-            font-size: 20px;
-            }
-
-            header {
-                margin-top: 1000px;
-            }
-
-            h1 {
-                color: #762DDD;
-                margin: 10px;
-            }
-
-
-            form {
-                margin: 40px;
-                color:black;  
-            }
-
-            input {
-                background-color:#d9c7f2;
-                height: 25px;
-            }
-
-            button {
-                color: black;
-                background-color:#d9c7f2;
-            }
-
-            /* stylingen under er gjort for å få input boksene til å komme rett under hverandre */
-
-
-            #txtVenue {
-                margin-left: 65px;
-            }
-
-            #txtConcertDate {
-                margin-left: 10px;
-            }
-
-        </style>
+        <link rel="stylesheet" type="text/css" href="../CSS/addConcert.css" />
 
     </head>
 
     <body>
 
-    <?php include ("../Public/nav.php") ?>
-    <?php include ("adminMenu.php") ?>    
 
+    <header>
+        <?php include ("../Public/nav.php") ?>
+    </header>
+
+    <section>
+        <?php include ("adminMenu.php") ?>    
+    </section>
 
 
     <h1>Add a concert</h1>
@@ -102,6 +62,9 @@ $sql= sprintf("INSERT INTO Concert(ConcertName,Venue, ConcertDate, VenuePic)
             <button type="submit" name="submit"> Add concert</button>
             
         </form>
+
+
+        <?php include ("../Public/infoFooter.php") ?>
 
 
     </body>

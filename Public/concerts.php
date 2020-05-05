@@ -40,6 +40,7 @@ $datasett = $tilkobling->query($sql);
 
         <section>
             <br><br> <!-- satte inn br-taggen for at dropdownmenyen til album ikke skulle dekke overskriften -->
+            <h1>Concerts</h1>
         </section>
     
         <div id="concertArtist">
@@ -61,6 +62,7 @@ $datasett = $tilkobling->query($sql);
                         <Strong>Concert Date: </Strong>
                         <?php echo  $rad["ConcertDate"]; ?> <br> <br>
                     </div>
+
 
             <?php } ?>
              

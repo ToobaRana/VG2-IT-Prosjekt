@@ -31,49 +31,11 @@ if (isset($_GET["deleteID"]))
     <head>
         <title> Update & delete</title>
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" media="screen" "stilarkfil.css" />
-        <link rel="stylesheet" type="text/css" media="print" href="utskrift.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <style>
-            table, th, td {
-                border: 1px solid black;
-                padding: 15px;
-                color: black;
-    
-            }
-            body {
-            margin-top:500 px;
-            font-size: 20px;
-            color: black;
-            }
-
-            header {
-                margin-top: 100px;
-            }
-
-            form {
-                color: black;
-            }
-
-            h1 {
-                color: #762DDD;
-                margin: 10px;
-            }
-
-            td a {
-                color: #762DDD;
-                text-decoration: none;
-            }
-
-            
-
-
-        </style>
-
+        <link rel="stylesheet" type="text/css" href="../CSS/adminAlbum.css" />
 
     </head>
-    <!-- seksjon for hovedinnhold -->
+    
+    <!-- Hoveddelen -->
 
     <body>
 
@@ -88,7 +50,7 @@ if (isset($_GET["deleteID"]))
         <h1>Edit or add an album</h1>
 
         <table>
-            <tr>
+            <tr id="singleBorder">
                 <th>ID</th>
                 <th>Album Name</th>
                 <th>Studio Album</th>
@@ -140,6 +102,7 @@ if (isset($_GET["deleteID"]))
         <hr>
 
         <?php include ("addAlbum.php") ?> 
+        <?php include ("../Public/infoFooter.php") ?>
 
 
     </body>

@@ -6,6 +6,7 @@
 body {
     display: flex;
     flex-wrap: wrap;
+    font-size: 20px;
 }
 
 .menu-bar {
@@ -26,6 +27,13 @@ body {
     height: auto;
     z-index: -1;
 }
+
+#banner {
+    width: 500px;
+    background-color: black;
+}
+
+
 
 /*
 

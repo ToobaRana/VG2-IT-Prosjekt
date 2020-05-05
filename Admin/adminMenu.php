@@ -7,17 +7,26 @@
     
     <body>
 
-        <!-- En meny for å styre mellom admin sidene -->
+                <!-- En meny for å styre mellom admin sidene -->
+                    
             
-        <nav id="adminMenu">
-            <ul id="purpleLine">
 
-                <li><a href="adminArtist.php">Artist</a> </li>
-                <li><a href="adminAlbum.php">Album</a></li>
-                <li><a href="addConcert.php">Concert</a></li>
+        <div class="adminMenu-bar">
             
+            <ul>
+
+                    <li><a href="adminArtist.php">Artist</a></li>
+
+                    <li><a href="adminAlbum.php">Album</a></li>
+
+                    <li><a href="addConcert.php">Concert</a></li>   
+
             </ul>
-        </nav>
+
+            
+        </div>
         
     </body>
 </html>
+
+        

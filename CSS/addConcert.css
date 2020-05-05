@@ -1,0 +1,54 @@
+body {
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    header {
+        width: 100%;
+        margin-bottom: 200px;
+    }
+
+
+    section {
+        width: 500px;
+        margin-left: 470px;
+    }
+    
+
+    h1 {
+        color: #333333;
+        margin: 10px;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+
+    form {
+        margin: 40px;
+        color:black;  
+    }
+
+    input {
+        background-color:rgb(191, 214, 217);
+        height: 25px;
+    }
+
+    button {
+        color: black;
+        background-color:rgb(191, 214, 217);
+        padding: 10px;
+    }
+
+
+    /* stylingen under er gjort for å få input boksene til å komme rett under hverandre */
+
+
+    #txtVenue {
+        margin-left: 73px;
+    }
+
+    #txtConcertDate {
+        margin-left: 10px;
+    }

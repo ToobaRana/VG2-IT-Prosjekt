@@ -34,65 +34,13 @@ header("Location:AdminArtist.php");
 ?>
     <!DOCTYPE html>
     <html>
-    <!-- seksjon for metainfo -->
 
     <head>
         <title> Update</title>
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" media="screen" "stilarkfil.css" />
-        <link rel="stylesheet" type="text/css" media="print" href="utskrift.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <style>
-             body {
-            font-size: 20px;
-            }
-
-            header {
-                margin-top: 55px;
-            }
-
-            form {
-                margin: 40px; 
-                color: black;   
-            }
-
-            input {
-                background-color:#d9c7f2;
-                height: 25px;
-            }
-
-            button {
-                color: black;
-                background-color:#d9c7f2;
-            }
-
-            /* stylingen under er gjort for å få input boksene til å komme rett under hverandre */
-
-            #txtLastName {
-                margin-left: 3px;
-            }
-
-
-            #txtGender {
-                margin-left: 30px;
-            }
-
-            #txtBirthdate {
-                margin-left: 15px;
-            }
-
-            #txtPicture {
-                margin-left: 32px;
-
-            
-            }
-        </style>
-
-
+        <link rel="stylesheet" type="text/css" href="../CSS/updateArtist.css" />
     
     </head>
-    <!-- seksjon for hovedinnhold -->
 
 
     <body>
@@ -105,6 +53,7 @@ header("Location:AdminArtist.php");
             <?php include ("adminMenu.php") ?> 
         </section>
           
+        <h1>Update Artist</h1>
 
         <form method="post">
             <?php if($rad=mysqli_fetch_array($datasett)) { ?>
@@ -132,6 +81,9 @@ header("Location:AdminArtist.php");
             <button type="submit" name="submit"> Update artist</button>
             <?php } ?>
         </form>
+
+
+        <?php include ("../Public/infoFooter.php") ?>
 
 
     </body>

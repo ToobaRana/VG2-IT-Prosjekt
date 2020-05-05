@@ -62,5 +62,8 @@ $sql= sprintf("INSERT INTO Admin(username, password)
                 </form>
             </div>
         </main>
+
+        <?php include ("../Public/infoFooter.php") ?>
+
     </body>
 </html>

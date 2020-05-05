@@ -24,56 +24,14 @@ if (isset($_GET["deleteID"]))
 
 ?>
 
-
-
     <!DOCTYPE html>
     <html>
-    <!-- seksjon for metainfo -->
+    <!--Hoveddelen-->
 
     <head>
         <title> Update & delete</title>
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" media="screen" "stilarkfil.css" />
-        <link rel="stylesheet" type="text/css" media="print" href="utskrift.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <style>
-
-            table, th, td {
-                border: 1px solid black;
-                padding: 15px;
-                color: black;
-    
-            }
-            body {
-            margin-top:500px;
-            font-size: 20px;
-            color: black;
-            }
-
-            header {
-                margin-top: 100px;
-            }
-
-            form {
-                color: black;
-            }
-
-            h1 {
-                color: #762DDD;
-                margin: 10px;
-            }
-
-            td a {
-                color: #762DDD;
-                text-decoration: none;
-            }
-
-
-
-        </style>
-
-
+        <link rel="stylesheet" type="text/css" href="../CSS/adminArtist.css" />
     </head>
     <!-- seksjon for hovedinnhold -->
 
@@ -96,7 +54,7 @@ if (isset($_GET["deleteID"]))
         <h1>Edit or add an artist</h1>
 
         <table>
-            <tr>
+            <tr id="sinlgeBorder">
                 <th>ID</th>
                 <th>Name</th>
                 <th>Gender</th>
@@ -138,6 +96,7 @@ if (isset($_GET["deleteID"]))
         <hr>
 
         <?php include ("addArtist.php") ?> 
+        <?php include ("../Public/infoFooter.php") ?>
 
 
     </body>

@@ -35,58 +35,9 @@ if (isset($_POST["submit"])){
     <head>
         <title> Add Album</title>
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" media="screen" "stilarkfil.css" />
-        <link rel="stylesheet" type="text/css" media="print" href="utskrift.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <style>
-         
-         body {
-            font-size: 20px;
-            }
-
-
-            form {
-                margin: 40px;    
-            }
-
-            input {
-                background-color:#d9c7f2;
-                height: 25px;
-            }
-
-            button {
-                color: black;
-                background-color:#d9c7f2;
-            }
-
-            /* stylingen under er gjort for å få input boksene til å komme rett under hverandre */
-
-
-            #txtReleaseDate {
-                margin-left: 5px;
-            }
-
-            #txtPrice {
-                margin-left: 70px;
-            }
-
-            #txtPicture {
-                margin-left: 22px;
-
-            }
-
-            #txtIsTop{
-                margin-left: 80px;
-
-            }
-
-
-
-        </style>
-
+        <link rel="stylesheet" type="text/css" href="../CSS/addAlbum.css" />
     </head>
-    <!-- seksjon for hovedinnhold -->
+    <!-- Hoveddelen-->
 
     <body>
 

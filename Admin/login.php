@@ -44,10 +44,13 @@ if (isset($_POST['submit'])) {
 
 
         <header>
-            <nav>
-                <?php include ("../Public/nav.php") ?>
-            </nav>
+            <?php include ("../Public/nav.php") ?>
         </header>
+
+
+        <section>
+            <br><br> <!-- satte inn br-taggen for at dropdownmenyen til album ikke skulle dekke overskriften -->
+        </section>
 
         <main>
             
@@ -72,6 +75,10 @@ if (isset($_POST['submit'])) {
                     <span><?php echo $error; ?></span>
                 </form>
             </div>
+
         </main>
+
+        <?php include ("../Public/infoFooter.php") ?>
+
     </body>
 </html>
