@@ -1,0 +1,63 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+
+
+#contactInfo {
+    width: 100%; 
+    padding: 15px;
+    background-color: #595A5A;
+    color: white;
+    font-family: Rozha One,Constantia,
+                Lucida Bright,Lucidabright,
+                "Lucida Serif",Lucida,"DejaVu Serif",
+                "Bitstream Vera Serif","Liberation Serif",
+                Georgia,serif;
+}
+
+ #contactInfo h1 {
+    color:#72D0D0;
+    text-align: center;
+    margin-bottom: 30px;
+
+    
+}
+#contactInfo p {
+    width: 500px;
+    margin-left: 480px;
+    line-height: 30px;
+}
+
+#contactInfo h2 {
+    color:#72D0D0;
+    margin-top: 40px;
+    width: 500px;
+    margin-left: 630px;
+    margin-bottom: 30px;
+}
+
+
+
+img[alt*="facebook"] { 
+    width: 55px;
+    margin-left: 650px;
+}
+
+img[alt*="instagram"] {
+    width: 70px;
+}
+
+
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    color: lightgray;
+    height: 50px;
+    background-color: #28747E;
+    padding-top: 10px;
+}

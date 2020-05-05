@@ -16,7 +16,7 @@
             </video>
 
         <div id="banner">
-            WELCOME TO THE MUSIC HUB
+            <h1>WELCOME TO THE MUSIC HUB</h1>
         </div>
 
         </section>

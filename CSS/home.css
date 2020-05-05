@@ -29,9 +29,24 @@ body {
 }
 
 #banner {
-    width: 500px;
-    background-color: black;
+    height: 300px;
+    color: #e68545;
+    width: 700px;
+    background-color: #333333;
+    opacity: 0.98;
+    margin-top: 300px;
+    margin-left: 350px;
+    padding: 100px;
+    font-family: Rozha One,Constantia,
+    Lucida Bright,Lucidabright,
+    "Lucida Serif",Lucida,"DejaVu Serif",
+    "Bitstream Vera Serif","Liberation Serif",
+    Georgia,serif;
+    text-align: center;
+    font-size: 30px;
 }
+
+
 
 
 

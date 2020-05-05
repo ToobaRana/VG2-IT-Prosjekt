@@ -33,7 +33,7 @@ body {
 }
 
 .active, .menu-bar ul li:hover {
-    background-color: #28747E;
+    background-color: #e68545;
     border-radius: 3px;
 }
 

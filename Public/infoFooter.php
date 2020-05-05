@@ -2,31 +2,23 @@
 <html>
      <head>
          <meta charset="utf-8" />
-         <link rel="stylesheet" type="text/css" href="../CSS/infoFooter1.css" />       
+         <link rel="stylesheet" type="text/css" href="../CSS/infoFooter.css" />       
     </head>         
     
     <body>
         <div id="contactInfo">
-            <div class="Address">
+
                 <h1>Contact us</h1>
-                <p>Music Hub<br>
-                        Asker Videregående Skole<br>
-                        1386 Asker <br>
-                        <br><br>
-                        Tlf: 66 90 72 40 <br>
-                        E-post: <a href="" target="_blank">askervgs@viken.no</a> 
+                <p>Contact us by giving us a call at the number below.
+                   Our highly specialized team members are
+                   ready to help answer any questions you
+                   may have whenever you want.
                 </p>
-                <img src="../Images/facebook.svg" alt="facebook">
-                <img src="../Images/insta.png" alt="instagram">
-            </div>
+                <h2>66 90 72 40</h2>
 
-            <div class="Address">
-                <h1>FACEBOOK</h1>
-                <p>Visit us on Facebook: <br>
-                    <a href="https://www.facebook.com" target="_blank"> Facebook</a>
-                </p>
-                </div>
-
+                    <a href="https://www.facebook.com/"><img src="../Images/facebook.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com/"><img src="../Images/insta.png" alt="instagram"></a>
+                           
 
         </div>
         
