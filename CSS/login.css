@@ -15,6 +15,7 @@ header {
     width: 100%;
 }
 
+
 h2 {
     font-size: 30px;
     color: black;
@@ -26,7 +27,7 @@ h2 {
 
 #loginBox{
     padding: 15px;
-    background-color:	#DCDCDC;
+    background-color:#DCDCDC;
     line-height: 40px;
     height: 360px;
     margin-top: 190px;
@@ -35,6 +36,7 @@ h2 {
     height: 400px;
     border: solid 0.1px;
     margin-bottom: 30px;
+    margin-top: 100px;
 }
 
 

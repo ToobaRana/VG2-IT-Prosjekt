@@ -10,8 +10,6 @@ body {
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
-
-
 }
 
 header {
@@ -20,9 +18,14 @@ header {
 
 h1 {
     font-size: 50px;
+    margin-top: 50px;
     margin-left: 10px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
     color: black;
+}
+
+section h1{
+    margin-top: 100px;
 }
 
 img {
@@ -30,8 +33,7 @@ img {
 }
 
 #artistSection img {
-
-    box-shadow: 5px 8px black ;
+    box-shadow: 5px 8px #706f6e ;
 }
 
 
@@ -55,11 +57,21 @@ section {
 }
 
 
+
 /* CSS for mobil versjonen */
 
-@media all and (max-width: 550px) {
+@media all and (max-width: 800px) {
 
+h1 {
+    margin-top: 100px;
+    text-align: center;
+}
 
+#artistSection {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
 
 
 

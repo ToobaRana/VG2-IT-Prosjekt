@@ -2,6 +2,8 @@
     $tilkobling=mysqli_connect ("localhost","root","root", "Prosjekt");
 
 
+// Hente ut disse kolonnene fra tabellen Album //   
+
     $sql="SELECT albumID, AlbumName, ReleaseDate, StudioAlbum, Price, AlbumCover, IsTop, artistID  
           FROM Album";
     $datasett = $tilkobling->query($sql);

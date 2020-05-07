@@ -33,10 +33,7 @@ if (isset($_GET["deleteID"]))
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="../CSS/adminArtist.css" />
     </head>
-    <!-- seksjon for hovedinnhold -->
 
-
-           
 
     <body>
 

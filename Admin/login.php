@@ -26,7 +26,7 @@ if (isset($_POST['submit'])) {
         { header("Location: AdminArtist.php"); } 
         
         /*Hvis det ikke stemmer skjer dette*/
-        else { echo "Wrong password"; } 
+        else { echo "Wrong username or password"; } 
     }
 }
 /*PHP-kode slutter*/

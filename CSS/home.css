@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     font-size: 20px;
+    width: 100%;
 }
 
 .menu-bar {
@@ -29,19 +30,14 @@ body {
 }
 
 #banner {
-    height: 300px;
+    height: 100px;
     color: #e68545;
-    width: 700px;
+    width: 500px;
     background-color: #333333;
     opacity: 0.98;
-    margin-top: 300px;
-    margin-left: 350px;
+    margin-top: 250px;
+    margin-left: 370px;
     padding: 100px;
-    font-family: Rozha One,Constantia,
-    Lucida Bright,Lucidabright,
-    "Lucida Serif",Lucida,"DejaVu Serif",
-    "Bitstream Vera Serif","Liberation Serif",
-    Georgia,serif;
     text-align: center;
     font-size: 30px;
 }
@@ -50,14 +46,23 @@ body {
 
 
 
-/*
+@media screen and (max-width: 800px) {
 
-@media screen and (max-width: 500px) {
+
 
 .video-background {
     width: 100%;
-    height: auto;
+    margin-top: -100px;
+    height: 300px;
+}
+
+#banner  {
+    display: none;
+}
+
+
+#contactInfo{
+margin-top: -245px;
 }
 
 }
-*/

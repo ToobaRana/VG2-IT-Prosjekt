@@ -16,14 +16,14 @@
                 </p>
                 <h2>66 90 72 40</h2>
 
-                    <a href="https://www.facebook.com/"><img src="../Images/facebook.png" alt="facebook"></a>
-                    <a href="https://www.instagram.com/"><img src="../Images/insta.png" alt="instagram"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../Images/facebook.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../Images/insta.png" alt="instagram"></a>
                            
 
         </div>
         
         <footer>
-            <p>&COPY;2020 MusicHub » |   Design & Development: Tooba Rana | </p>
+            <p>&COPY;2020 MusicHub  |   Design & Development: Tooba Rana  | </p>
         </footer>
         
     </body>

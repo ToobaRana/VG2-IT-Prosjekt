@@ -22,7 +22,7 @@
 
 
 
-<!-- seksjon for metainfo -->
+<!-- Hoveddelen -->
 
 <head>
     <title>Artist</title>
