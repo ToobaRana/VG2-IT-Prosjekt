@@ -18,37 +18,46 @@ body {
                 Georgia,serif;
 }
 
- #contactInfo h1 {
+ #contactInfo #wrapper h1 {
     color:#72D0D0;
-    text-align: center;
+    margin: auto;
     margin-bottom: 30px;
     font-size: 40px;
 
 }
 
+#wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+}
+
 #contactInfo p {
-    width: 500px;
-    margin-left: 480px;
+    width: 100%;
     line-height: 30px;
 }
 
 #contactInfo h2 {
     color:#72D0D0;
     margin-top: 40px;
-    width: 500px;
-    margin-left: 630px;
+    width: 100%;
     margin-bottom: 30px;
+    text-align: center;
+}
+
+#appLogo {
+    margin-left: 300px;
 }
 
 
 
 img[alt*="facebook"] { 
-    width: 55px;
-    margin-left: 650px;
+    width: 14%;
 }
 
 img[alt*="instagram"] {
-    width: 70px;
+    width: 18%;
 }
 
 
@@ -62,52 +71,36 @@ footer {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
 
 
 #contactInfo {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
-
-#contactInfo p {
-    width: 500px;
-    margin-right: 480px;
-}
 
 #contactInfo h2 {
     color:#72D0D0;
     margin-top: 40px;
-    width: 500px;
-    margin-right: 630px;
-    margin-bottom: 30px;
-}
-
-
-
-img[alt*="facebook"] { 
-    width: 55px;
-    margin-right: 650px;
-    margin-bottom: 30px;
-}
-
-img[alt*="instagram"] {
-    width: 70px;
-}
-
-
-footer {
     width: 100%;
-    text-align: center;
-    color: black;
-    height: 60px;
-    background-color: #e68545;
-    padding-top: 10px;
 }
+
+#contactInfo #wrapper h1 {
+    margin-left: -2px;
+
+}
+
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
 
 
 }

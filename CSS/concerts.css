@@ -16,7 +16,7 @@ h1 {
     color: black;
 }
 
-h2 {
+#concertInfo h2 {
     font-size: 40px;
     color: #28747E;
     text-shadow: black 40px;
@@ -52,8 +52,6 @@ img {
     padding: 10px;
     margin-top: 30px;
     margin-left: 30px;
-    
-    
 }
 
 section {
@@ -63,4 +61,35 @@ section {
 
 section h1 {
     margin-top: 100px;
+}
+
+@media all and (max-width: 780px) {
+
+    h1 {
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #concertArtist {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    #concertInfo {
+        width: 100%;
+        margin-left: 30px;
+        margin-bottom: 80px;
+        
+    }
+    
+    #picVenue {
+        width: 100%;
+        margin-bottom: -40px;
+        margin-left: 30px;
+    }
+
+
 }

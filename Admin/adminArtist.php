@@ -50,6 +50,7 @@ if (isset($_GET["deleteID"]))
 
         <h1>Edit or add an artist</h1>
 
+
         <table>
             <tr id="sinlgeBorder">
                 <th>ID</th>
@@ -59,8 +60,10 @@ if (isset($_GET["deleteID"]))
                 <th>Picture</th>
                 <th>Delete</th>
                 <th>Update</th>
-
             </tr>
+
+
+    
             <?php while($rad =mysqli_fetch_array($datasett)) { ?>
 
             <tr>

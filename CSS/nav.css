@@ -3,7 +3,7 @@
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
     #main li a:hover {
         color: black;
         font-size: 13px;
@@ -38,7 +38,6 @@
 #menuClosed {
     display: block;
     position: fixed;
-    right: ;
     z-index: 3;
 }
 
@@ -54,10 +53,8 @@
 
 
 #main li {
-    width: ;
     float: inline;
     margin: 0px;
-    float: ;
     padding-right: 15px;
     padding-top: 20px;
     font-family: sans-serif;
@@ -68,7 +65,6 @@
 
 
 #main li {
-    float: ;
     padding-top: 20px;
 }
 
@@ -84,7 +80,6 @@
     text-decoration: none;
     color: #111;
     margin: 10px;
-    display: ;
     text-align: center;
     padding: 20px 20px;
 }
@@ -125,7 +120,7 @@ li.dropDown {
     display: block;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
     #li a {
         display: block;
         padding: 5px;
@@ -233,7 +228,7 @@ li.dropDown {
 
 /*  skjerm som er større enn 780px  */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 780px) {
     #close {
         display: none;
     }
@@ -242,6 +237,11 @@ li.dropDown {
     #menuClosed {
         display: none;
     }
+
+    #main {
+        margin-left: 310px;
+    }
+
 
 
     #main li a:hover {
@@ -257,9 +257,7 @@ li.dropDown {
         font-size: 13px;
     }
     
-    #main {
-        margin-left: 310px;
-    }
+   
     
     .dropContent {
         height: 200px;

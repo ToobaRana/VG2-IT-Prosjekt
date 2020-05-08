@@ -55,11 +55,13 @@
 
                     <div id="albumInfo">
                             <h1><?php echo $rad["AlbumName"]; ?></h1> <br>
-                            <strong>Artist:  </strong><?php echo $rad["FirstName"]; ?> <?php echo $rad["LastName"]; ?> <br>
-                            <strong>Release Date:  </strong><?php echo $rad["ReleaseDate"]; ?> <br>
-                            <strong>Studio Album :  </strong><?php echo  $rad["StudioAlbum"]; ?> <br>
-                            <strong>Price:  </strong><?php echo  $rad["Price"]; ?> kr <br> <br>
-                
+
+                            <div id="description">
+                                <strong>Artist:  </strong><?php echo $rad["FirstName"]; ?> <?php echo $rad["LastName"]; ?> <br>
+                                <strong>Release Date:  </strong><?php echo $rad["ReleaseDate"]; ?> <br>
+                                <strong>Studio Album :  </strong><?php echo  $rad["StudioAlbum"]; ?> <br>
+                                <strong>Price:  </strong><?php echo  $rad["Price"]; ?> kr <br> <br>
+                            </div>
 
                             <!-- Hvis dette ikke skjer -->               
 

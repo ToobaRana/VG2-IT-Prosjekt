@@ -10,7 +10,8 @@
         
             <?php include ("../Public/nav.php") ?>
 
-
+        <div id="padding"></div>
+        
         <section class="header">
             <video autoplay loop class="video-background" muted plays-inline>
                 <source src="../Images/background.mp4" type="video/mp4">

@@ -32,37 +32,39 @@ body {
 #banner {
     height: 100px;
     color: #e68545;
-    width: 500px;
+    width: 40%;
     background-color: #333333;
-    opacity: 0.98;
-    margin-top: 250px;
+    opacity: 0.90;
+    margin-top: 300px;
     margin-left: 370px;
     padding: 100px;
     text-align: center;
     font-size: 30px;
 }
 
+ 
 
 
+@media screen and (max-width: 780px) {
 
-
-@media screen and (max-width: 800px) {
-
-
+body {
+    background-color: #595A5A;
+}
 
 .video-background {
     width: 100%;
-    margin-top: -100px;
-    height: 300px;
 }
+
 
 #banner  {
     display: none;
 }
 
+#contactInfo {
+    margin-top: -100px;
 
-#contactInfo{
-margin-top: -245px;
 }
+
+
 
 }

@@ -97,7 +97,14 @@ form img {
     text-align: center;
 }
 
+@media all and (max-width: 780px) {
 
+#loginBox {
+    margin-left: -1px;
+}
+
+
+}
 
 
 

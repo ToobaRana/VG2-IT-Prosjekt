@@ -50,8 +50,8 @@ $datasett = $tilkobling->query($sql);
                 
 
                     <div id="picVenue">
-                                <img src="<?php echo $rad["VenuePic"]; ?>" 
-                                alt = "<?php echo $rad["Venue"]; ?>" />
+                            <img src="<?php echo $rad["VenuePic"]; ?>" 
+                            alt = "<?php echo $rad["Venue"]; ?>" />
                     </div>
                 
 

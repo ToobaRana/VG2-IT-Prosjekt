@@ -43,3 +43,29 @@ section {
     width: 100%;
     margin-bottom: 40px;
 }
+
+
+@media all and (max-width: 780px) {
+
+    h1 {
+        margin-top: 50px;
+        text-align: center;
+    }
+    
+    #artistSection {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-left: 80px;
+    }
+
+    #artistInfo {
+        margin-left: -70px;
+    }
+    
+    #artistPhoto {
+        width: 100%;
+        margin-top: -50px;
+    }
+    
+}    

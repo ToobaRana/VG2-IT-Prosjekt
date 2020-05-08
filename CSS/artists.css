@@ -60,7 +60,7 @@ section {
 
 /* CSS for mobil versjonen */
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 780px) {
 
 h1 {
     margin-top: 100px;
@@ -71,6 +71,11 @@ h1 {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    margin-left: 60px;
+}
+
+#artistPhoto {
+    width: 100%;
 }
 
 

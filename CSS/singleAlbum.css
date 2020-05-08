@@ -51,3 +51,36 @@ section {
     width: 100%;
     margin-bottom: 40px;
 }
+
+@media all and (max-width: 780px) {
+
+    h1 {
+        margin-top: 50px;
+        text-align: center;
+
+    }
+    
+    #album {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-left: 80px;
+    }
+
+    #albumInfo {
+        margin-left: -70px;
+        width: 100%;
+        text-align: initial;
+        
+    }
+    
+    #albumPhoto {
+        width: 100%;
+        margin-top: -50px;
+    }
+
+    #description {
+        margin-left: 65px;
+    }
+    
+}    
