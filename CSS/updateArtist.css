@@ -10,8 +10,8 @@ header {
 }
 
 section {
-    width: 500px;
-    margin-left: 470px;
+    width: 100%;
+    margin-left: 0px;
 }
 
 h1 {
@@ -57,5 +57,14 @@ button {
 #txtPicture {
     margin-left: 32px;
 
+
+}
+
+@media all and (max-width: 780px) {
+
+    section {
+        width: 100%;
+        margin-left: 0px;
+}
 
 }

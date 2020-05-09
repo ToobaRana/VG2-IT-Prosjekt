@@ -48,8 +48,8 @@ header {
 }
 
 section {
-    width: 500px;
-    margin-left: 470px;
+    width: 40%;
+    margin-left: 420px;
 }
 
 form {
@@ -72,8 +72,17 @@ td a {
 
 @media all and (max-width: 780px) {
 
-table{
-    overflow-x:auto;
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        margin-left: 2% ;
+        margin-right: 2%;
+    }
+
+    section {
+        width: 100%;
+        margin-left: 0px;
 }
 
 }

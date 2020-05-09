@@ -36,6 +36,11 @@ tr {
     border-bottom: 1px solid black;
 }
 
+/* Zebra striping */
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
 
 header {
     margin-bottom: 200px;
@@ -43,8 +48,8 @@ header {
 }
 
 section {
-    width: 500px;
-    margin-left: 470px;
+    width: 40%;
+    margin-left: 420px;
 }
 
 form {
@@ -62,4 +67,22 @@ h1 {
 td a {
     color: #28747E;
     text-decoration: none;
+}
+
+
+@media all and (max-width: 780px) {
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        margin-left: 2% ;
+        margin-right: 2%;
+    }
+
+    section {
+        width: 100%;
+        margin-left: 0px;
+}
+
 }
